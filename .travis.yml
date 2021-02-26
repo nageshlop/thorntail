@@ -1,0 +1,7 @@
+arch:
+  - amd64
+  - ppc64le
+language: java
+script:
+  - mvn clean install -U -Dmaven.test.failure.ignore=true
+  - mvn test -B
